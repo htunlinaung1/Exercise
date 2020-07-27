@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function result() {
+			var first=parseInt(document.myform.fir.value);
+			var second=parseInt(document.myform.sec.value);
+	
+            var total=first+second;
+
+
+			document.myform.output.value=total;
+		}
+	</script>
+</head>
+
+<body>
+	<th><h3>Exercise 5</h3></th>
+	<form action="" name="myform">
+	First Number: <input type="text" name="fir"><br><br>
+	Second Number: <input type="text" name="sec"><br><br>
+
+
+	<input type="button" value="Calculate" onclick="result()">	<input type="reset" value="Cancel"><br><br>
+
+	Output:<input type="text" name="output">
+	</form>
+</body>
+</html>
